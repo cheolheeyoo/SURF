@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-site-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SURF Lab, Smart Urban Remote Sensing Futures, 부산대학교 스마트시티 원격탐사 연구실" />
+  <title>News | SURF Lab</title>
+  <link rel="icon" href="assets/surf-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body data-page="news">
+  <div class="progress" data-progress></div>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="SURF Lab home">
+      <img src="assets/surf-logo.svg" alt="SURF Lab logo" />
+      <span>
+        <strong>SURF Lab</strong>
+        <small>Smart Urban Remote Sensing Futures</small>
+      </span>
+    </a>
+    <nav class="nav-links" id="site-menu" data-nav>
+      <a href="index.html"><span data-lang-en>Home</span><span data-lang-ko>홈</span></a>
+      <a href="professor.html"><span data-lang-en>Professor</span><span data-lang-ko>교수</span></a>
+      <a href="research.html"><span data-lang-en>Research</span><span data-lang-ko>연구</span></a>
+      <a href="publications.html"><span data-lang-en>Publications</span><span data-lang-ko>논문</span></a>
+      <a href="members.html"><span data-lang-en>Members</span><span data-lang-ko>구성원</span></a>
+      <a href="news.html"><span data-lang-en>News</span><span data-lang-ko>소식</span></a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Language selector">
+        <button type="button" data-lang-button="en" aria-pressed="true">Eng</button>
+        <button type="button" data-lang-button="ko" aria-pressed="false">한글</button>
+      </div>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section-pad">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow"><span data-lang-en>News</span><span data-lang-ko>소식</span></p>
+          <h1><span data-lang-en>Recent papers, talks, and lab announcements.</span><span data-lang-ko>최근 논문, 학회 발표, 연구실 소식.</span></h1>
+          <p><span data-lang-en>A bilingual newsroom for publication highlights, conference presentations, awards, service, and recruiting updates.</span><span data-lang-ko>논문 홍보, 학회 발표, 수상, 학술활동, 모집 안내를 위한 한영 뉴스룸입니다.</span></p>
+        </div>
+        <div class="page-stat-card" data-reveal data-delay="120"><strong><span data-lang-en>Latest</span><span data-lang-ko>최신</span></strong><p><span data-lang-en>Publication and conference updates are rendered dynamically from script.js.</span><span data-lang-ko>논문 및 학회 소식은 script.js에서 동적으로 렌더링됩니다.</span></p></div>
+      </div>
+    </section>
+
+    <section class="section-pad compact">
+      <div class="container lead-news" data-reveal>
+        <div class="news-meta"><span><span data-lang-en>Publication</span><span data-lang-ko>논문</span></span><span>2026</span></div>
+        <h2><span data-lang-en>New work on smart-city environmental exposure and thermal stress</span><span data-lang-ko>스마트시티 환경 노출과 열스트레스 관련 최신 연구</span></h2>
+        <p><span data-lang-en>Recent publications include multi-pollutant co-exposure prediction using geostationary satellite data and AI-driven citywide thermal stress mapping.</span><span data-lang-ko>최근 논문에는 정지궤도 위성자료 기반 다중오염물질 동시 노출 예측과 AI 기반 도시 전역 열스트레스 지도화 연구가 포함됩니다.</span></p>
+        <a class="btn btn-primary" href="publications.html"><span data-lang-en>View publications</span><span data-lang-ko>논문 보기</span></a>
+      </div>
+    </section>
+
+    <section class="section-pad muted-section">
+      <div class="container section-heading" data-reveal><p class="eyebrow"><span data-lang-en>Newsroom</span><span data-lang-ko>뉴스룸</span></p><h2><span data-lang-en>Filter by category</span><span data-lang-ko>카테고리별 필터</span></h2></div>
+      <div class="container news-filters" data-reveal>
+        <button type="button" class="active" data-news-filter="all"><span data-lang-en>All</span><span data-lang-ko>전체</span></button>
+        <button type="button" data-news-filter="publication"><span data-lang-en>Publications</span><span data-lang-ko>논문</span></button>
+        <button type="button" data-news-filter="presentation"><span data-lang-en>Talks</span><span data-lang-ko>발표</span></button>
+        <button type="button" data-news-filter="award"><span data-lang-en>Awards &amp; service</span><span data-lang-ko>수상·학술활동</span></button>
+        <button type="button" data-news-filter="lab"><span data-lang-en>Lab</span><span data-lang-ko>연구실</span></button>
+      </div>
+      <div class="container result-count" data-news-count></div>
+      <div class="container news-list" data-news-list></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">SURF Lab</a>
+        <p><span data-lang-en>Smart Urban Remote Sensing Futures</span><span data-lang-ko>Smart Urban Remote Sensing Futures</span><br /><span data-lang-en>Smart City Remote Sensing Lab, Pusan National University</span><span data-lang-ko>부산대학교 스마트시티 원격탐사 연구실</span></p>
+      </div>
+      <div>
+        <h3><span data-lang-en>Contact</span><span data-lang-ko>연락처</span></h3>
+        <p><a href="mailto:cheolhee.yoo@pusan.ac.kr">cheolhee.yoo@pusan.ac.kr</a><br /><span data-lang-en>Pusan National University, Busan, South Korea</span><span data-lang-ko>부산대학교, 부산, 대한민국</span></p>
+      </div>
+      <div>
+        <h3><span data-lang-en>Links</span><span data-lang-ko>바로가기</span></h3>
+        <p><a href="https://scholar.google.com/citations?user=P_pe0a8AAAAJ&hl=ko" data-scholar-link target="_blank" rel="noopener">Google Scholar</a><br /><a href="publications.html"><span data-lang-en>Publications</span><span data-lang-ko>논문</span></a><br /><a href="news.html"><span data-lang-en>News</span><span data-lang-ko>소식</span></a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
