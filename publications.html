@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SURF Lab selected publications and publication list" />
+  <title>Publications | SURF Lab</title>
+  <link rel="icon" href="assets/surf-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="progress" data-progress></div>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="SURF Lab home">
+      <img src="assets/surf-logo.svg" alt="SURF Lab logo" />
+      <span><strong>SURF Lab</strong><small>Smart Urban Remote Sensing Futures</small></span>
+    </a>
+    <nav class="nav-links" id="site-menu" data-nav>
+      <a href="index.html">Home</a>
+      <a href="professor.html">Professor</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="members.html">Members</a>
+      <a href="news.html">News</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><span class="theme-toggle__icon" aria-hidden="true">◐</span></button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section-pad">
+      <div class="container narrow" data-reveal>
+        <p class="eyebrow">Publications</p>
+        <h1>Selected works in urban remote sensing, GeoAI, and smart city science.</h1>
+        <p class="page-subtitle">
+          This page is designed for easy updating: edit the publication data in <code>script.js</code> to add new papers,
+          links, DOIs, or preprints.
+        </p>
+        <div class="hero-actions compact-actions">
+          <a class="btn btn-primary" href="https://scholar.google.com/citations?user=P_pe0a8AAAAJ&amp;hl=ko" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="btn btn-ghost" href="news.html">Publication news</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad compact">
+      <div class="container featured-pubs">
+        <article class="featured-pub" data-reveal>
+          <span class="tag">2025 · Scientific Data</span>
+          <h2>Mapping 10-m Industrial Lands across 1000+ Global Large Cities, 2017–2023</h2>
+          <p>A global data product for understanding industrial land dynamics in large cities.</p>
+        </article>
+        <article class="featured-pub" data-reveal data-delay="100">
+          <span class="tag">2024 · Communications Earth & Environment</span>
+          <h2>Unequal impacts of urban industrial land expansion on economic growth and CO₂ emissions</h2>
+          <p>Quantifies how industrial land growth, economic development, and emissions interact.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container section-heading with-action" data-reveal>
+        <div>
+          <p class="eyebrow">Publication browser</p>
+          <h2>Search and filter papers</h2>
+        </div>
+        <p class="result-count" data-publication-count></p>
+      </div>
+      <div class="container filter-panel" data-reveal>
+        <label>
+          <span>Search</span>
+          <input type="search" placeholder="Search by title, journal, topic..." data-publication-search />
+        </label>
+        <label>
+          <span>Year</span>
+          <select data-publication-year>
+            <option value="all">All years</option>
+          </select>
+        </label>
+        <label>
+          <span>Type</span>
+          <select data-publication-type>
+            <option value="all">All types</option>
+            <option value="journal">Journal</option>
+            <option value="book">Book chapter</option>
+          </select>
+        </label>
+      </div>
+      <div class="container publication-list" data-publication-list></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="footer-brand" href="index.html">SURF Lab</a><p>Smart Urban Remote Sensing Futures<br />부산대학교 스마트시티 원격탐사 연구실</p></div>
+      <div><h3>Contact</h3><p><a href="mailto:cheolhee.yoo@pusan.ac.kr">cheolhee.yoo@pusan.ac.kr</a><br />Pusan National University</p></div>
+      <div><h3>Related</h3><p><a href="research.html">Research</a><br /><a href="news.html">News</a></p></div>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>
