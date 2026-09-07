@@ -72,14 +72,6 @@ HTML은 메모장이나 VS Code로 편집할 수 있습니다. 내용을 수정�
 - 원본 CV PDF 전체나 개인 휴대전화 번호는 홈페이지에 포함하지 않았습니다.
 - 확인되지 않은 학생 명단, 연구실 호실, 모집 인원, 장학금 조건 등은 넣지 않았습니다.
 
-## 디자인 참고
-
-다음 사이트의 여백, 타이포그래피, 연구 콘텐츠 구성을 참고했으며, 코드·로고·이미지를 복제하지 않았습니다.
-
-- [MIT Earth Intelligence Lab](https://earthintelligence.mit.edu/)
-- [Yonsei Decision Intelligence & Learning Lab](https://dil.yonsei.ac.kr/)
-- [Yimeng Song’s Research Group](https://songyimeng.com/)
-
 ## 구현 확인
 
 - 모든 HTML 페이지의 로컬 이미지·스타일·스크립트·링크와 내부 앵커 확인
